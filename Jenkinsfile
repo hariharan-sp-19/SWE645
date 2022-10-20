@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        jar -cvf SWE645.war *
+        jar -cvf 'SWE645.war' *
       }
     }
     stage('test') {
