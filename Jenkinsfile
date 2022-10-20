@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        echo 'Building application'
+        jar -cvf SWE645.war *
       }
     }
     stage('test') {
